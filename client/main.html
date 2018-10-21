@@ -1,0 +1,58 @@
+<head>
+  <title>testing</title>
+</head>
+
+<body>
+  {{> main}}
+</body>
+
+<template name="main">
+
+  <nav class="navbar navbar-expand-lg">
+    <span class="navbar-brand">
+      <img src="https://apexcharts.com/media/apexcharts-logo.png" width="45" height="45"/>
+      Meteor ApexCharts Demo
+    </span>
+    <button class="btn btn-primary ml-auto" id="appendData">Generate Random Data</button>
+  </nav>
+
+  <div class="row col-md-12">
+
+    <div class="card col-md-4">
+      <div class="card-body">
+        {{> apexChart optionsBar}}
+      </div>
+    </div>
+
+    <div class="card col-md-4">
+      <div class="card-body">
+        {{> apexChart optionsRadialBar}}
+      </div>
+    </div>
+
+    <div class="card col-md-4">
+      <div class="card-body">
+        {{> apexChart optionsLine}}
+      </div>
+    </div>
+
+    <div class="card col-md-4">
+      <div class="card-body">
+        {{> apexChart optionsArea}}
+      </div>
+    </div>
+
+    <div class="card col-md-4">
+      <div class="card-body">
+        {{> apexChart optionsHeatmap}}
+      </div>
+    </div>
+
+    <div class="card col-md-4">
+      <div class="card-body">
+        {{> apexChart optionsScatter}}
+      </div>
+    </div>
+
+  </div>
+</template>
